@@ -15,3 +15,9 @@ target_link_libraries(FileWriteBinaryTest FileReadWriteTestUtil)
 
 add_executable(FileReadBinaryTest FileReadBinaryTest.cpp)
 target_link_libraries(FileReadBinaryTest FileReadWriteTestUtil)
+
+
+install(TARGETS FileWriteTextTest COMPONENT component)
+install(TARGETS FileReadTextTest COMPONENT component)
+install(TARGETS FileWriteBinaryTest COMPONENT component)
+install(TARGETS FileReadBinaryTest COMPONENT component)
