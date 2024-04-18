@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
 configdir=$1
-outputdir=$2
-workdir=$3
+workdir=$2
+outputdir=$3
+
 
 
 FileWriteBinaryTest ${configdir}config_binary.txt ${outputdir}ret_write_binary.txt ${workdir}
