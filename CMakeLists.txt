@@ -21,3 +21,11 @@ install(TARGETS FileWriteTextTest COMPONENT component)
 install(TARGETS FileReadTextTest COMPONENT component)
 install(TARGETS FileWriteBinaryTest COMPONENT component)
 install(TARGETS FileReadBinaryTest COMPONENT component)
+
+if(UNIX)
+	include(GNUInstallDirs)
+	install(FILES startFileReadWriteTest 
+		DESTINATION ${CMAKE_INSTALL_BINDIR} 
+		COMPONENT component 
+		PERMISSIONS OWNER_EXECUTE OWNER_WRITE OWNER_READ GROUP_EXECUTE GROUP_READ  WORLD_READ WORLD_EXECUTE)
+endif(UNIX)
