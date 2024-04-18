@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+configdir=$1
+outputdir=$2
+workdir=$3
+
+
+FileWriteBinaryTest ${configdir}config_binary.txt ${outputdir}ret_write_binary.txt ${workdir}
+FileWriteTextTest ${configdir}config_text.txt ${outputdir}ret_write_text.txt ${workdir}
+FileReadBinaryTest ${configdir}config_binary.txt ${outputdir}ret_read_binary.txt ${workdir}
+FileReadTextTest ${configdir}config_text.txt ${outputdir}ret_read_text.txt ${workdir}
