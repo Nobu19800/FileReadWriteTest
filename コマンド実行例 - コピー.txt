@@ -1,7 +1,0 @@
-FileWriteBinaryTest.exe config_binary.txt ret_write_binary.txt
-
-FileWriteTextTest.exe config_text.txt ret_write_text.txt
-
-FileReadBinaryTest.exe config_binary.txt ret_read_binary.txt
-
-FileReadTextTest.exe config_text.txt ret_read_text.txt
